@@ -8,8 +8,8 @@ def index():
 
 @app.route("/",methods=["GET","POST"])
 def main():
-           name = request.form.get("name")
-           return(render_template("main.html",r = name))
+           r = request.form.get("r")
+           return(render_template("main.html",r = r))
 
 
 
