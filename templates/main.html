@@ -5,7 +5,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: auto;
+
     }
+
 
   @media (min-width:600px) {
     .container {
@@ -25,19 +27,21 @@
     }
   }
 </style>
-
-
 <div class="container">
-  <h1>Hi, {{r}}, How can help you today?</h1>
-  <form action="/text_gpt" method="post">
-    <input type="submit" value="Text Generator" style="width:200px;height:100px;">
+<h1>Hi, {{r}}, How can help you today?</h1>
+  <form action="/about_ntu" method="post" style="margin-left: 25%;">
+    <input type="submit" value="About NTU" style="width:50%;height:100px;background-color: #ECEFF1;">
   </form>
-
-  <form action="/image_gpt" method="post">
-    <input type="submit" value="Image Generator" style="width:200px;height:100px;">
+  <p></p>
+  <form action="/text_gpt" method="post" style="margin-left: 25%;">
+    <input type="submit" value="Text Generator" style="width:50%;height:100px;background-color: #CFD8DC;">
   </form>
-
-  <form action="/end" method="post">
-    <input type="submit" value="END" style="width:200px;height:100px;">
+  <p></p>
+  <form action="/image_gpt" method="post" style="margin-left: 25%;">
+    <input  type="submit" value="Image Generator" style="width:50%;height:100px;background-color: #B0BEC5;">
+  </form>
+  <p></p>
+  <form action="/end" method="post" style="margin-left: 25%;">
+    <input type="submit" value="END" style="width:50%;height:100px;background-color: #90A4AE;">
   </form>
 </div>
