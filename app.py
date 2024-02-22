@@ -6,10 +6,12 @@ import time
 from openai import OpenAI
 
 
-
-model = OpenAI(api_key="sk-qx4zKKzHnYRc7k8LuXyKHXdQi0gf5BcisgXBVZcXc9t4K8E9",
-               base_url="https://api.chatanywhere.tech/v1")
+openai_api_key = os.environ["OPENAI_API_TOKEN"]
 os.environ["REPLICATE_API_TOKEN"] = "r8_GHyHGLZOntMYvtEgUZiE9vFdtMZrj7L2ZTtgM"
+
+
+model = OpenAI(api_key = openai_api_key,
+               base_url = "https://api.chatanywhere.tech/v1")
 
 app = Flask(__name__)
 
