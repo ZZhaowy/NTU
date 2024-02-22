@@ -36,7 +36,11 @@ def main():
 @app.route("/about_ntu", methods=["GET", "POST"])
 def about_ntu():
     return (render_template("about_ntu.html"))
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f58e47baa0ccd93d4a86cf83a277aadd1fe2e825
 #image
 @app.route("/image_gpt", methods=["GET", "POST"])
 def image_gpt():
