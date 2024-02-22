@@ -6,7 +6,7 @@ import time
 from openai import OpenAI
 
 
-openai_api_key = os.environ["OPENAI_API_TOKEN"]
+openai_api_key = os.getenv["OPENAI_API_TOKEN"]
 os.environ["REPLICATE_API_TOKEN"] = "r8_GHyHGLZOntMYvtEgUZiE9vFdtMZrj7L2ZTtgM"
 
 
