@@ -6,7 +6,7 @@ import time
 from openai import OpenAI
 
 
-openai_api_key = os.environ["OPENAI_API_TOKEN"]
+openai_api_key = os.environ["OPENAI_API_TOKEN"] = "sk-qx4zKKzHnYRc7k8LuXyKHXdQi0gf5BcisgXBVZcXc9t4K8E9"
 os.environ["REPLICATE_API_TOKEN"] = "r8_GHyHGLZOntMYvtEgUZiE9vFdtMZrj7L2ZTtgM"
 
 
@@ -31,6 +31,11 @@ def main():
         r = request.form.get("r")
         first_time = 0
     return (render_template("main.html", r=r))
+
+#ntu
+@app.route("/about_ntu", methods=["GET", "POST"])
+def about_ntu():
+    return (render_template("about_ntu.html"))
 
 #image
 @app.route("/image_gpt", methods=["GET", "POST"])
@@ -72,6 +77,10 @@ def end():
     global first_time
     first_time = 1
     return (render_template("end.html"))
+
+@app.route("/real_end", methods=["GET", "POST"])
+def real_end():
+    return (render_template("real_end.html"))
 
 if __name__ == "__main__":
     app.run()
