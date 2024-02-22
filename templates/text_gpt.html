@@ -28,13 +28,12 @@
 
 
 <div class="container">
-    <h1>The Image Generator by Midjourney:</h1>
-    <p>{{r}}</p>
-    <p><img src={{r}} style="width:250px;height:100px;"></p>
-    <form action="/main" method="post">
-        <input type="submit" value="Main" style="width:300px;height:100px;">
-    </form>
-    <form action="/end" method="post">
-        <input type="submit" value="End" style="width:300px;height:100px;">
+    <h1>Welcome to Text Generator (ChatGPT)</h1>
+    <form action="/text_result" method="post">
+        <h2>Question: </h2>
+        <input type="text" style="width:100%;height: 50px;" name="q">
+        <p>
+            <input type="submit" value="Enter" style="width:100px;height:50px;">
+        </p>
     </form>
 </div>
