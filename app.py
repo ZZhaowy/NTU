@@ -32,6 +32,11 @@ def main():
         first_time = 0
     return (render_template("main.html", r=r))
 
+#ntu
+@app.route("/about_ntu", methods=["GET", "POST"])
+def about_ntu():
+    return (render_template("about_ntu.html"))
+  
 #image
 @app.route("/image_gpt", methods=["GET", "POST"])
 def image_gpt():
